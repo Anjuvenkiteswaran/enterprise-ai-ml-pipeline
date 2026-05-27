@@ -1,70 +1,91 @@
-# Enterprise AI ML Pipeline
+# Enterprise AI Customer Analytics Platform
 
-End-to-end machine learning project for enterprise customer analytics, built to demonstrate predictive analytics, feature engineering, model evaluation, and production-oriented ML workflows.
+An end-to-end enterprise machine learning platform designed for predictive analytics, recommendation systems, NLP sentiment analysis, and production-style ML deployment.
 
-## Project Overview
+This project simulates a real-world enterprise AI system where customer engagement, product usage, support interactions, and sentiment are analyzed to predict churn risk and generate actionable business insights.
 
-This project simulates an enterprise SaaS/customer platform where the business wants to identify customers at risk of churn and understand the key drivers behind customer behavior.
+---
 
-The pipeline includes:
+# GitHub Repository
 
-- Synthetic enterprise customer dataset generation
-- Churn prediction model
-- Feature engineering
-- Class imbalance analysis
-- SMOTE-based balancing
-- ROC-AUC and classification evaluation
-- Model serialization for production use
+GitHub: https://github.com/Anjuvenkiteswaran/enterprise-ai-ml-pipeline
 
-## Business Problem
+---
 
-Enterprise customers interact with multiple product features, submit support tickets, delay payments, and show different engagement patterns. The goal is to predict which customers are likely to churn so the product and customer success teams can take timely action.
+# Project Highlights
 
-## Tech Stack
+- Enterprise churn prediction pipeline
+- Recommendation system for next-best product/module
+- NLP sentiment analysis for support tickets
+- FastAPI production deployment
+- Interactive Streamlit analytics dashboard
+- SQL-based feature engineering layer
+- MLflow experiment tracking
+- PySpark feature engineering pipeline
+- Production-style ML workflow and model persistence
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Imbalanced-learn
-- SMOTE
-- Random Forest
-- Jupyter Notebook
-- Joblib
-- Git & GitHub
+---
 
-## Dataset
+# Business Problem
 
-A synthetic enterprise customer dataset was created with 5,000 customer records.
+Enterprise SaaS platforms often struggle with:
 
-Key features include:
+- Customer churn
+- Poor customer engagement
+- Negative support experiences
+- Low feature adoption
+- Product recommendation optimization
 
-- Customer tenure
-- Monthly active days
-- Average session duration
-- Support ticket count
-- Payment delay count
-- Feature usage score
-- Subscription plan
-- Negative sentiment ratio
-- Churn flag
+This platform addresses these problems through predictive analytics and machine learning workflows.
 
-## Project Structure
+---
 
-```
-enterprise-ai-ml-pipeline/
-│
-├── data/
-│   └── processed/
-│       └── customer_data.csv
-│
-├── notebooks/
-│   ├── 01_generate_dataset.ipynb
-│   └── 02_churn_prediction.ipynb
-│
-├── models/
-│   └── churn_model.pkl
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
+# Core Components
+
+## 1. Churn Prediction System
+
+Built a supervised machine learning pipeline to predict customer churn risk using:
+
+- Customer engagement
+- Session activity
+- Support ticket frequency
+- Payment delays
+- Feature usage
+- Sentiment indicators
+
+### Techniques Used
+
+- Random Forest Classifier
+- SMOTE imbalance handling
+- ROC-AUC evaluation
+- Feature importance analysis
+
+### ML Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC
+
+---
+
+## 2. Recommendation Engine
+
+Built a recommendation system to suggest next-best enterprise modules/products using customer usage similarity.
+
+### Techniques Used
+
+- Cosine Similarity
+- Collaborative Filtering Logic
+- User-Module Interaction Matrix
+
+### Example Recommendation
+
+```text
+Customer: CUST_10
+
+Recommended Modules:
+- AI Forecasting
+- Fraud Detection
+- Workflow Optimizer
